@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Modal</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content" id="modalitem_body">
+                <div class="modal-header justify-content-between align-items-start">
+                    <div class="item-header">
+                        <div class="d-flex">
+                            <span>
+                                <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/veg.svg" class="item-type-icon" alt="Veg icon">
+                            </span>
+                            <div class="d-grid ml-2">
+                                <p class="modal-title fs-16 fw-600">Alfredo pizza</p>
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mb-0 fw-500 fs-7 text-success subtotal_29">$179.00</p>
+                                        <del class="pl-sm-1 text-muted fs-8">$199.00</del>
+                                        <div class="d-flex pl-sm-3 ml-3">
+                                            <div class="offer-badge rounded-3">
+                                                <h5 class="m-0 fs-9 fw-medium">10.1% Off</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="text-danger fs-7">Exclusive of all taxes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-close custom-close-btn m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <div class="card bg-gray border-0 p-3 rounded-3">
+                                <div class="d-flex align-items-center">
+                                    <p class="m-0 fs-15 fw-500 text-muted">SKU :</p>
+                                    <span class="ps-1 fs-15 fw-500">GG1003</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 border-top pt-3" id="item_addons_group_29_8">
+                            <h5 class="addon-group-title mb-1 fs-6">Desserts</h5>
+                            <div class="d-flex align-items-center fs-8 text-muted mb-2">
+                                <span>(Optional)</span>
+                                <span class="mx-1">•</span>
+                                <span>Select 1</span>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input check-option" type="radio" name="addons_id_8_29" id="addons_17_8_29" value="17" data-addons-id="17" data-addons-price="0" data-addons-name="Salad">
+                                <div class="d-flex justify-content-between w-100">
+                                    <label class="cursor-pointer fs-7" for="addons_17_8_29">Salad</label>
+                                    <label class="cursor-pointer fs-7" for="addons_17_8_29">$ 0.00</label>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input check-option" type="radio" name="addons_id_8_29" id="addons_17_8_29" value="16" data-addons-id="16" data-addons-price="0" data-addons-name="Fried onions">
+                                <div class="d-flex justify-content-between w-100">
+                                    <label class="cursor-pointer fs-7" for="addons_16_8_29">Fried onions</label>
+                                    <label class="cursor-pointer fs-7" for="addons_16_8_29">$ 0.00</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 mt-3 border-top pt-3">
+                            <h6 class="addon-group-title fw-500">Extras</h6>
+                            <ul class="list-unstyled extra-food mx-0 mt-1">
+                                <div id="pricelist">
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <div class="form-check w-100">
+                                            <input class="form-check-input" type="checkbox" id="addons_59" name="addons[]" value="59" data-price="10">
+                                            <div class="d-flex justify-content-between w-100 fs-7">
+                                                <label class="m-0" for="addons_59">Small Size</label>
+                                                <label class="m-0" for="addons_59">$ 10.00</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <div class="form-check w-100">
+                                            <input class="form-check-input" type="checkbox" id="addons_60" name="addons[]" value="60" data-price="20">
+                                            <div class="d-flex justify-content-between w-100 fs-7">
+                                                <label class="m-0" for="addons_60">Medium Size</label>
+                                                <label class="m-0" for="addons_60">$ 20.00</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex gap-2 align-items-center">
+                                        <div class="form-check w-100">
+                                            <input class="form-check-input" type="checkbox" id="addons_61" name="addons[]" value="61" data-price="30">
+                                            <div class="d-flex justify-content-between w-100 fs-7">
+                                                <label class="m-0" for="addons_61">Large Size</label>
+                                                <label class="m-0" for="addons_61">$ 30.00</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 pt-0">
+                    <div class="w-100 m-0 p-2 border-bottom border-top">
+                        <div class="row g-2 justify-content-center">
+                            <div class="col-sm-2 px-1">
+                                <div class="btn item-quantity w-100 fs-7" id="detail_plus-minus">
+                                    <button class="btn btn-sm item-quantity-minus p-0" id="minus" data-type="minus" data-item_id="29" onclick="changeqty($(this).attr('data-item_id'),'minus')" value="minus value">-</button>
+                                    <input class="item-quantity-input mb-0" type="text" name="number" value="1" id="item_qty" readonly>
+                                    <button class="btn btn-sm item-quantity-plus p-0" id="plus" data-item_id="29" onclick="changeqty($(this).attr('data-item_id'),'plus')" data-type="plus" value="plus value">+</button>
+                                </div>
+                            </div>
+                            <div class="col-sm-5 px-1">
+                                <a class="btn add-to-cart fs-7 rounded-3 text-light w-100 m-0" onclick="addtocart('https://foodego.infotechgravity.com/addtocart','29',0)">Add to cart</a>
+                            </div>
+                            <div class="col-12 col-sm-5 mt-2 mt-sm-0 px-1">
+                                <a class="btn buy-now fs-7 rounded-3 w-100 m-0" onclick="addtocart('https://foodego.infotechgravity.com/addtocart','29',1)">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 row g-2 m-0 justify-content-between align-items-center">
+                        <div class="col-12 col-sm-6 wishlist fs-15 mb-sm-0 mt-2">
+                            <a class="wishlist-btn heart-red text-primary" href="#">
+                                <i class="fa-regular fa-heart fs-6"></i>
+                                Add to Wishlist
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-6 mt-2">
+                            <div class="row g-2 flex-wrap align-items-center justify-content-start justify-content-sm-end">
+                                <div class="col-auto">
+                                    <a href="tel:" class="icon-box bg-dark rounded-2" data-bs-toggle="tooltip" title="Phone">
+                                        <i class="fa-solid fa-phone text-white fs-7"></i>
+                                    </a>
+                                </div>
+                                <div class="col-auto px-0">
+                                    <a href="https://api.whatsapp.com/send?phone=7016428845&amp;text=I am interested for this item :  Alfredo pizza" class="icon-box bg-dark rounded-2" id="enquiries" data-bs-toggle="tooltip" title="Whatsapp" target="_blank">
+                                        <i class="fa-brands fa-whatsapp text-white fs-7"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="foodgo.js"></script>
+</body>
+</html>

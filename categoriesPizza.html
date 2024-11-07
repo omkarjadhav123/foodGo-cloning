@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="Responsive.css">
+    <link rel="stylesheet" href="categoriesPizza.css">
+    <title>categoriesPizza</title>
+</head>
+<body>
+    <div class="body-wrapper">
+        <div class="d-block d-lg-none" id="pwa-install-container">
+            <div class="pwa-banner animate">
+                <nav class="drop-down mobile-drop-down pwa-install-banner d-flex justify-content-between align-items-center" id="pwa-install-bar" style="bottom: -100vh;">
+                    <div class="pwa-logo-container">
+                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/pwalogo-66c5d664ad0c8.png" class="pwa-logo img-fluid" alt="PWA Logo">
+                    </div>
+                    <div class="pwa-text-content mx-2">
+                        <p class="m-0 fs-8">Install our multi-ranch application</p>
+                    </div>
+                    <button class="btn btn-install-app" id="install-app-button">Install</button>
+                </nav>
+            </div>
+        </div>
+
+        <nav class="offer-bar">
+            <div class="container">
+                <div class="offer-slider owl-carousel owl-theme" id="offer-slider">
+                    <div class="item">
+                        <p class="offer-text m-0 line-1 fs-7">Online Food Order 25% Off</p>
+                    </div>
+                    <div class="item">
+                        <p class="offer-text m-0 line-1 fs-7">Deal Of The Week Offer</p>
+                    </div>
+                    <div class="item">
+                        <p class="offer-text m-0 line-1 fs-7">Every Friday 20% Discounts</p>
+                    </div>
+                    <div class="item">
+                        <p class="offer-text m-0 line-1 fs-7">Unlock The Magic 50% Offer</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <header class="custom-header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container navbar-container">
+                    <a class="navbar-brand" href="https://foodego.infotechgravity.com/home">
+                        <img class="custom-logo img-fluid" src="/foodGo/assets/logo1.png" alt="logo">
+                    </a>
+                    <div class="d-flex gap-2 align-items-center branch-lang-container">
+                        <a href="javascript:void(0);" class="py-1 px-3 border-end border-start branch-link h-auto d-lg-none d-xl-none d-xxl-none" data-bs-toggle="modal" data-bs-target="#branchModal" aria-expanded="false">
+                            <div class="d-flex gap-2 align-items-center">
+                                <i class="fa-solid fa-location-dot text-primary"></i>
+                                <div class="d-flex flex-column branch-info">
+                                    <span class="fs-8 text-secondary">Branch</span>
+                                    <span class="selected-branch fs-7 text text-primary">Branch 02</span>
+                                </div>
+                            </div>
+                        </a>
+                    
+                        <div class="dropdown d-lg-none">
+                            <a class="btn lang-button border border-dark rounded" type="button" id="langDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-earth-americas text-primary"></i>
+                            </a>
+                            <ul class="dropdown-menu min-dropdown-ltr" aria-labelledby="langDropdown">
+                                <li>
+                                    <a class="dropdown-item text-dark d-flex gap-2" href="https://foodego.infotechgravity.com/lang/change?lang=en">
+                                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/language/flag-66c5ec59a7202.png" class="img-fluid lang-img rounded-5" alt="">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-dark d-flex gap-2" href="https://foodego.infotechgravity.com/lang/change?lang=ar">
+                                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/language/flag-66c5ec613d54b.png" class="img-fluid lang-img rounded-5" alt="">
+                                        Arabic
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link active" href="foodGoHome.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="categories.html">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="blogs.html">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="About.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link custom-nav-link" href="contactus.html">Help & Contact us</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex align-items-center gap-2 nav-sidebar-d-none">
+                            <div class="branch-selector-wrapper py-1 px-3">
+                                <a href="#" class="branch-selector-link border-start border-end" data-toggle="modal" data-target="#branchModal" aria-expanded="false">
+                                  <div class="d-flex align-items-center">
+                                    <i class="branch-icon fas fa-map-marker-alt mr-2"></i>
+                                    <div class="branch-info d-flex flex-column">
+                                      <span class="branch-label small text-muted">Branch</span>
+                                      <span class="branch-name">Branch 02</span>
+                                    </div>
+                                  </div>
+                                </a>
+                            </div>
+                            <a href="" class="custom-icon-button lag-button">
+                                <i class="fa-solid fa-earth-americas"></i>
+                            </a>
+                            <a href="https://foodego.infotechgravity.com/search" class="custom-icon-button">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="https://foodego.infotechgravity.com/cart" class="custom-icon-button custom-cart-button">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="custom-cart-badge">0</span>
+                            </a>
+                            <a href="https://foodego.infotechgravity.com/login" class="custom-icon-button">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section>
+            <div class="breadcrumb-wrapper">
+                <div class="container">
+                    <div class="breadcrumb-content">
+                        <nav class="breadcrumb-nav" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a class="text-muted" href="foodGoHome.html">Home</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                    Pizza
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="mb-3 mb-sm-5">
+                    <h1 class="menu-title mb-2">Pizza</h1>
+                    <p class="menu-description m-0 text-secondary fs-7 fw-500 text-muted line-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter-sidebar mb-3">
+                            <a href="http://127.0.0.1:5500/foodGo/categoriesPizza.html" class="filter-link fs-7 active">All</a>
+                            <a href="http://127.0.0.1:5500/foodGo/smallpizza.html" class="filter-link fs-7">Small Pizza</a>
+                            <a href="http://127.0.0.1:5500/foodGo/mediampizza.html" class="filter-link fs-7">Medium Pizza</a>
+                            <a href="http://127.0.0.1:5500/foodGo/largepizza.html" class="filter-link fs-7">Large Pizza</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="my-0">
+                    <div class="row boxes g-3">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mt-3">
+                            <div class="card trending-card rounded-4">
+                                <a href="https://foodego.infotechgravity.com/item-alfredo-pizza">
+                                    <div class="position-relative">
+                                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/item/item-66b49150640bf.webp" class="card-img-top trending-image" alt="Margarita pizza">
+                                        <div class="trending-offer fs-9 rounded-3 m-0">33.4% Off</div>
+                                    </div>
+                                </a>
+                                <div class="card-body pb-0 px-2 pt-2 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center pb-2">
+                                        <span class="trending-category">Pizza</span>
+                                        <div class="trending-rating fs-8">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>0.0</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="trending-name pb-3 fs-13 fw-500 d-flex">
+                                            <a href="https://foodego.infotechgravity.com/item-margarita-pizza">
+                                                <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/veg.svg" alt="Vegetarian" class="diet-icon me-1">
+                                            </a>
+                                            <a href="https://foodego.infotechgravity.com/item-alfredo-pizza" class="text-dark">
+                                                <p class="title-card line-2 mb-0">Alfredo pizza</p>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="card-item px-2 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fs-13 fw-600">
+                                            $ 199.00
+                                            <span class="trending-old-price ml-2">$ 299.00</span>
+                                        </span>
+                                        <ADD class="btn fs-7 fw-500 p-0  btn-sm border rounded-3 trending-add-btn" onclick="showitem('alfredo-pizza','https://foodego.infotechgravity.com/show-item')">ADD</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mt-3">
+                            <div class="card trending-card rounded-4">
+                                <a href="https://foodego.infotechgravity.com/item-kombo-pizza">
+                                    <div class="position-relative">
+                                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/item/item-66b49010d7bfa.webp" class="card-img-top trending-image" alt="Margarita pizza">
+                                        <div class="trending-offer fs-9 rounded-3 m-0">50.0% Off</div>
+                                    </div>
+                                </a>
+                                <div class="card-body pb-0 px-2 pt-2 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center pb-2">
+                                        <span class="trending-category">Pizza</span>
+                                        <div class="trending-rating fs-8">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>0.0</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="trending-name pb-3 fs-13 fw-500 d-flex">
+                                            <a href="https://foodego.infotechgravity.com/item-margarita-pizza">
+                                                <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/veg.svg" alt="Vegetarian" class="diet-icon me-1">
+                                            </a>
+                                            <a href="https://foodego.infotechgravity.com/item-kombo-pizza" class="text-dark">
+                                                <p class="title-card line-2 mb-0"> Kombo pizza</p>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="card-item px-2 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fs-13 fw-600">
+                                            $ 110.00
+                                            <span class="trending-old-price ml-2">$ 220.00</span>
+                                        </span>
+                                        <bADD class="btn fs-7 fw-500 p-0  btn-sm border rounded-3 trending-add-btn" onclick="showitem('kombo-pizza','https://foodego.infotechgravity.com/show-item')">ADD</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-6 mt-3">
+                            <div class="card trending-card rounded-4">
+                                <a href="">
+                                    <div class="position-relative">
+                                        <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/item/item-66b48f3b2bab0.webp" class="card-img-top trending-image" alt="Margarita pizza">
+                                    </div>
+                                </a>
+                                <div class="card-body pb-0 px-2 pt-2 border-bottom">
+                                    <div class="d-flex justify-content-between align-items-center pb-2">
+                                        <span class="trending-category">Pizza</span>
+                                        <div class="trending-rating fs-8">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <span>5.0</span>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h5 class="trending-name pb-3 fs-13 fw-500 d-flex">
+                                            <a href="https://foodego.infotechgravity.com/item-margarita-pizza">
+                                                <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/veg.svg" alt="Vegetarian" class="diet-icon me-1">
+                                            </a>
+                                            <a href="https://foodego.infotechgravity.com/item-margarita-pizza" class="text-dark">
+                                                <p class="title-card line-2 mb-0"> Margarita pizza</p>
+                                            </a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="card-item px-2 bg-transparent">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="fs-13 fw-600">
+                                            $ 250.00
+                                        </span>
+                                        <ADD class="btn fs-7 fw-500 p-0  btn-sm border rounded-3 trending-add-btn" onclick="showitem('margarita-pizza','https://foodego.infotechgravity.com/show-item')">ADD</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section-question">
+            <div class="container">
+                <div class="faq-wrapper bg-light-gray p-4 rounded-3">
+                    <div class="row justify-content-center p-2">
+                        <div class="col-xl-8 text-center">
+                            <h2 class="faq-title mb-0">
+                                Still have a question?
+                            </h2>
+                            <p class="faq-description m-0 text-muted mt-3">
+                                Subscribe to our newsletter for coupons, offers, and exciting promotional discounts.
+                            </p>
+                            <ul class="faq-avatar-group d-none d-md-flex justify-content-center flex-wrap mt-3">
+                                <li class="faq-avatar-item">
+                                    <img class="faq-avatar-img rounded-circle w-100 h-100" src="https://foodego.infotechgravity.com/storage/app/public/web-assets/images/people-1.jpg" alt="avatar">
+                                </li>
+                                <li class="faq-avatar-item">
+                                    <img class="faq-avatar-img rounded-circle w-100 h-100" src="https://foodego.infotechgravity.com/storage/app/public/web-assets/images/people-2.jpg" alt="avatar">
+                                </li>
+                                <li class="faq-avatar-item">
+                                    <img class="faq-avatar-img rounded-circle w-100 h-100" src="https://foodego.infotechgravity.com/storage/app/public/web-assets/images/people-3.jpg" alt="avatar">
+                                </li>
+                                <li class="faq-avatar-item">
+                                    <img class="faq-avatar-img rounded-circle w-100 h-100" src="https://foodego.infotechgravity.com/storage/app/public/web-assets/images/people-4.jpg" alt="avatar">
+                                </li>
+                                <li class="faq-avatar-item">
+                                    <img class="faq-avatar-img rounded-circle w-100 h-100" src="https://foodego.infotechgravity.com/storage/app/public/web-assets/images/people-5.jpg" alt="avatar">
+                                </li>
+                            </ul>
+                            <a href="https://foodego.infotechgravity.com/contactus" class="btn btn-contact btn-outline-pri mt-3">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="container">
+                    <div class="footer-content border-bottom-pri">
+                        <div class="row footer-row g-3">
+                            <div class="col-lg-3 col-12 footer-left mt-3">
+                                <a href="https://foodego.infotechgravity.com/home">
+                                    <img src="/foodGo/assets/logo1.png" class="mb-3 footer-logo" alt="Logo">
+                                </a>
+                                <p class="footer-description m-0">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, a phasellus mattis mi arcu urna Pharetra, a phasellus.
+                                </p>
+                                <ul class="contact-info-list ps-0 mt-2">
+                                    <li class="contact-item my-1">
+                                        <a href="https://www.google.com/maps/place/" class="text-dark">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-house text-dark mr-1"></i>
+                                                <span>123 Street, City, Country</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contact-item my-1">
+                                        <a href="tel:9514785623" class="text-dark">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-solid fa-headset text-dark mr-1"></i>
+                                                <span>9514785623</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="contact-item my-1">
+                                        <a href="mailto:branch05@yopamil.com" class="text-dark">
+                                            <div class="d-flex align-items-center">
+                                                <i class="fa-regular fa-envelope text-dark mr-1"></i>
+                                                <span>branch05@yopamil.com</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 footer-links mt-3">
+                                <h4 class="footer-title">Pages</h4>
+                                <ul class="footer-links-list">
+                                    <li><a href="https://foodego.infotechgravity.com/categories" class="footer-link">Categories</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/gallery" class="footer-link">Gallery</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/blogs" class="footer-link">Blogs</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/ourteam" class="footer-link">Our Team</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/contactus" class="footer-link">Help & Contact us</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-6 footer-links mt-3">
+                                <h4 class="footer-title">Our Services</h4>
+                                <ul class="footer-links-list">
+                                    <li><a href="https://foodego.infotechgravity.com/about-us" class="footer-link">About</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/refund-policy" class="footer-link">Refund Policy</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/privacy-policy" class="footer-link">Privacy Policy</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/terms-conditions" class="footer-link">Terms & Conditions</a></li>
+                                    <li><a href="https://foodego.infotechgravity.com/faq" class="footer-link">FAQs</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-3 col-md-4 footer-newsletter mt-3">
+                                <h4 class="footer-title">Subscribe to Newsletter</h4>
+                                <p class="footer-text m-0">Subscribe to our newsletter for coupons, offers, and exciting promotional discounts.</p>
+                                <form class="newsletter-form mt-2" method="post" action="https://foodego.infotechgravity.com/subscribe">
+                                    <input type="hidden" name="_token" value="lfKaK9vIFdOifXM6yImcvGzndsWibhCpYEzcDh86">
+                                    <div class="input-group gap-2">
+                                        <input type="email" class="form-control rounded-3" name="email" placeholder="Enter email to Subscribe...">
+                                        <button type="submit" class="btn btn-sub rounded-3">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom d-flex flex-column flex-md-row my-3 justify-content-between align-items-center">
+                        <p class="footer-copyright mb-0 text-center text-md-start">Copyright &copy; FoodeGo. All Rights Reserved</p>
+                        <div class="payment-methods d-flex align-items-center">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/cod.png" alt="COD" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/wallet.png" alt="Wallet" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/razorpay.png" alt="Razorpay" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/stripe.png" alt="Stripe" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/flutterwave.png" alt="Flutterwave" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/paystack.png" alt="Paystack" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/mercadopago.png" alt="Mercadopago" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/myfatoorah.png" alt="Myfatoorah" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/paypal.png" alt="Paypal" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/toyyibpay.png" alt="Toyyibpay" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/paytab.png" alt="Paytab" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/phonepe.png" alt="PhonePe" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/mollie.png" alt="Mollie" class="payment-icon">
+                            <img src="https://foodego.infotechgravity.com/storage/app/public/admin-assets/images/about/payment/khalti.png" alt="Khalti" class="payment-icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="mobile-footer-menu d-lg-none">
+            <div class="container">
+                <ul class="d-flex justify-content-between align-items-center mb-0 gap-3">
+                    <!-- Home -->
+                    <li class="footer-menu-item text-center">
+                        <a href="https://foodego.infotechgravity.com/home" class="footer-menu-link position-relative active-menu text-dark">
+                            <i class="fa-solid fa-house-chimney-user"></i>
+                            <p class="menu-text m-0">Home</p>
+                        </a>
+                    </li>
+                    <!-- Search -->
+                    <li class="footer-menu-item text-center">
+                        <a href="https://foodego.infotechgravity.com/search" class="footer-menu-link">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p class="menu-text m-0">Search</p>
+                        </a>
+                    </li>
+                    <!-- Cart -->
+                    <li class="footer-menu-item text-center">
+                        <a href="https://foodego.infotechgravity.com/cart" class="footer-menu-link">
+                            <div class="cart-icon-wrapper position-relative">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span class="cart-badge">0</span>
+                            </div>
+                            <p class="menu-text m-0">Cart</p>
+                        </a>
+                    </li>
+                    <!-- Wishlist -->
+                    <li class="footer-menu-item text-center">
+                        <a href="https://foodego.infotechgravity.com/login" class="footer-menu-link">
+                            <i class="fa-regular fa-heart"></i>
+                            <p class="menu-text m-0">Wishlist</p>
+                        </a>
+                    </li>
+                    <!-- Login -->
+                    <li class="footer-menu-item text-center">
+                        <a href="https://foodego.infotechgravity.com/login" class="footer-menu-link">
+                            <i class="fa-regular fa-user"></i>
+                            <p class="menu-text m-0">Login</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="foodgo.js"></script>
+</body>
+</html>

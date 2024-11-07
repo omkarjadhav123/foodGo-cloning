@@ -1,0 +1,63 @@
+/* Breadcrumb Section Styling part[] */
+
+.breadcrumb-wrapper {
+    min-height: 62px;
+    display: flex;
+    background-color: var(--bs-primary-rgb);
+    align-items: center;
+}
+.breadcrumb-nav {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    color: #6c757d;
+}
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 10px 0;
+    }
+    .breadcrumb-nav {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+}
+/* about us */
+.about-section {
+    margin: 65px 0px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-heading {
+        margin-bottom: 25px;
+    }
+
+    .about-description {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-description {
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .about-section {
+        margin: 25px 0;
+    }
+}

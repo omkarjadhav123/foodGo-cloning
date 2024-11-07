@@ -1,0 +1,50 @@
+
+/* Breadcrumb Section Styling part[] */
+
+.breadcrumb-wrapper {
+    min-height: 62px;
+    display: flex;
+    background-color: var(--bs-primary-rgb);
+    align-items: center;
+}
+.breadcrumb-nav {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    color: #6c757d;
+}
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 10px 0;
+    }
+    .breadcrumb-nav {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+}
+
+/* blogs part [] */
+
+.section-blog {
+    margin: 65px 0px;
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .section-blog{
+        margin: 25px 0;
+    }
+}
+

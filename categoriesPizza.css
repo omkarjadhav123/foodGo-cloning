@@ -1,0 +1,138 @@
+
+/* moblie devices */
+/* PWA Banner Styling */
+.pwa-banner {
+    position: relative;
+    width: 100%;
+    padding: 15px 10px;
+    background-color: var(--bs-primary);
+    z-index: 9999;
+    color: #fff;
+    animation: slideInUp 0.5s forwards;
+}
+
+.pwa-logo-container {
+    width: 50px;
+    height: 50px;
+}
+.pwa-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.pwa-text-content {
+    flex-grow: 1;
+}
+
+.btn-install-app {
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background: var(--bs-secondary);
+    border: none;
+    padding: 7px 12px;
+    transition: background 0.8s ease 0s;
+    font-weight: 600;
+}
+
+/* Slide-in animation */
+@keyframes slideInUp {
+    from {
+        bottom: -100vh;
+    }
+    to {
+        bottom: 0;
+    }
+}
+/* Breadcrumb Section Styling part[] */
+
+.breadcrumb-wrapper {
+    min-height: 62px;
+    display: flex;
+    background-color: var(--bs-primary-rgb);
+    align-items: center;
+}
+.breadcrumb-nav {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: '>';
+    color: #6c757d;
+}
+.breadcrumb {
+    background-color: transparent;
+    margin-bottom: 0;
+    align-items: center;
+    padding: 0;
+}
+@media (max-width: 767px) {
+    .breadcrumb-wrapper {
+        padding: 10px 0;
+    }
+    .breadcrumb-nav {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-nav {
+        font-size: 0.8rem;
+    }
+}
+/* new menu section [part] */
+
+.menu-section {
+    margin: 65px 0;
+}
+.filter-sidebar {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: 5px;
+    scrollbar-color: var(--bs-primary) #f0f0f0;
+    padding-bottom: 20px;
+}
+.filter-sidebar::-webkit-scrollbar {
+    height: 7px;
+    margin-top: 10px;
+}
+.filter-sidebar::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 6px;
+    margin: 10px 15px 0;
+}
+.filter-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--bs-primary) !important;
+    border-radius: 6px;
+    margin: 10px 15px 0; 
+}
+.filter-link {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    color: var(--bs-primary);
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+.filter-link.active,
+.filter-link:hover {
+    border: 1px solid var(--bs-primary);
+    color: #fff;
+    background-color: var(--bs-primary);
+}
+  
+
+
+
+
+
+
+
+
+
+
